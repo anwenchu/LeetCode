@@ -9,8 +9,8 @@ public class TwoSum {
 
 
     public static void main(String[] args) {
-        int [] nums = {2, 7, 11, 15};
-        int target = 9;
+        int [] nums = {3, 3};
+        int target = 6;
         System.out.println(Arrays.toString(twoSum1(nums, target)));
         System.out.println(Arrays.toString(twoSum2(nums, target)));
 
@@ -43,10 +43,10 @@ public class TwoSum {
     public static int[] twoSum2(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);
-            if (null != map.get(target - nums[i])) {
-                return new int[]{i, map.get(target - nums[i])};
+            if (map.containsKey(target - nums[i])) {
+                return new int[]{map.get(target - nums[i]), i};
             }
+            map.put(nums[i], i);
         }
         return null;
     }
