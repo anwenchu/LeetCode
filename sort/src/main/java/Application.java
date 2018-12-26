@@ -15,7 +15,9 @@ public class Application {
         // 打印生成数组
         printArray(array);
         // 1.冒泡排序
-        SortUtils.bubbleSort(array);
+//        SortUtils.bubbleSort(array);
+        // 2.选择排序
+        SortUtils.selectionSort(array);
         // end.输出数组
         printArray(array);
     }
