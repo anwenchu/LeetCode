@@ -10,6 +10,7 @@
 
   <modules>
     <module>arr</module>
+    <module>sort</module>
 
   </modules>
 </project>
