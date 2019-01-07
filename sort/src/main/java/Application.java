@@ -17,7 +17,9 @@ public class Application {
         // 1.冒泡排序
 //        SortUtils.bubbleSort(array);
         // 2.选择排序
-        SortUtils.selectionSort(array);
+//        SortUtils.selectionSort(array);
+        // 3.插入排序
+        SortUtils.insertionSort(array);
         // end.输出数组
         printArray(array);
     }
